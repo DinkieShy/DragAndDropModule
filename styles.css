@@ -1,13 +1,12 @@
 .dropArea{
-  position: relative;
-  text-align: center;
-  width: 30%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  background-color: grey;
-  border-style: solid;
-  border-radius: 2px;
-  border-color: darkgrey;
+    position: relative;
+    text-align: center;
+    width: 30%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: #fff;
 }
 
 .dropAreaHover{
@@ -25,42 +24,52 @@
 }
 
 #topSection{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-  height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 70%;
+    background: #072249;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 #bottomSection{
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 30%;
-  overflow:hidden;
-  background-color: darkgrey;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+    background-color: #072249;
 }
 
 #checkButton{
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  width: 30%;
-  height: 40%;
-  color: #FFF;
-  border-color: #76CA02;
-  background-color: #76CA02;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30%;
+    height: 40%;
+    color: #FFF;
+    border-color: #337AB6;
+    background-color: #337AB6;
+    margin-right: 20px;
+    font-size: 20px;
 }
 
 #resetButton{
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  width: 30%;
-  height: 40%;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 30%;
+    height: 40%;
+    margin-left: 20px;
+    font-size: 20px;
 }
 
 .btn{
@@ -91,9 +100,9 @@
 }
 
 .btn-danger{
-  color: #FFF;
-  border-color: #ED1C24;
-  background-color: #ED1C24;
+    color: #FFF;
+    border-color: #337AB6;
+    background-color: #337AB6;
 }
 
 #dragList{
@@ -110,7 +119,8 @@
   padding: 0.6em 1em;
   font-size: 14px;
   box-sizing: border-box;
-  background-color: lightgrey;
+  background-color: #337AB6;
+  color: white;
   border-radius: 5px;
   text-align: center;
   vertical-align: middle;
@@ -132,13 +142,18 @@ body{
   overflow: hidden;
 }
 
+section.header {
+    border-bottom: 1px solid #fff;
+}
+
 h1{
   display: inline-block;
-  font-size: 13px;
+  font-size: 20px;
+  color: #fff;
 }
 
 h2{
-  color: black;
+  color: #fff;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
