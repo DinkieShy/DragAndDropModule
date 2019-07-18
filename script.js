@@ -3,9 +3,10 @@ var dropArea2 = [];
 var dropArea3 = [];
 var dropAreas = [dropArea1, dropArea2, dropArea3];
 var itemBeingDragged;
-var correctDropArea1 = [1, 2, 3, 4];
-var correctDropArea2 = [5, 6];
-var correctDropArea3 = [7, 8, 9];
+var correctDropArea1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+var correctDropArea2 = [13, 14, 15, 16, 17];
+var correctDropArea3 = [18, 19, 20, 21, 22, 23, 24, 25];
+var amountOfItems = 25;
 var correctDropAreas = [correctDropArea1, correctDropArea2, correctDropArea3];
 
 $(document).ready(function(){
@@ -60,7 +61,7 @@ function checkAnswers(){
   dropAreas[1] = [];
   dropAreas[2] = [];
   unusedItems = [];
-  for(var i = 1; i <= 9; i++){
+  for(var i = 1; i <= amountOfItems; i++){
     var area = $('#item' + i).parent()[0].id;
     switch(area){
       case 'drop1':

@@ -4,9 +4,10 @@
     width: 30%;
     overflow-y: scroll;
     overflow-x: hidden;
+    border-radius: 5px;
     border-style: solid;
-    border-radius: 2px;
-    border-color: #fff;
+    border-color: #002147;
+    background-color: white;
 }
 
 .dropAreaHover{
@@ -24,52 +25,53 @@
 }
 
 #topSection{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 70%;
-    background: #072249;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 70%;
+  background: #747678;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 #bottomSection{
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 30%;
-    overflow: hidden;
-    background-color: #072249;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+  background: white;
 }
 
 #checkButton{
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 30%;
-    height: 40%;
-    color: #FFF;
-    border-color: #337AB6;
-    background-color: #337AB6;
-    margin-right: 20px;
-    font-size: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 30%;
+  height: 40%;
+  color: #FFF;
+  background-color: #002147;
+  margin-right: 20px;
+  font-size: 20px;
 }
 
 #resetButton{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    width: 30%;
-    height: 40%;
-    margin-left: 20px;
-    font-size: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 30%;
+  height: 40%;
+  margin-left: 20px;
+  font-size: 20px;
 }
 
 .btn{
@@ -100,9 +102,9 @@
 }
 
 .btn-danger{
-    color: #FFF;
-    border-color: #337AB6;
-    background-color: #337AB6;
+  color: #FFF;
+  border-color: #EC1010;
+  background-color: #EC1010;
 }
 
 #dragList{
@@ -119,7 +121,7 @@
   padding: 0.6em 1em;
   font-size: 14px;
   box-sizing: border-box;
-  background-color: #337AB6;
+  background-color: #002147;
   color: white;
   border-radius: 5px;
   text-align: center;
@@ -149,7 +151,7 @@ section.header {
 h1{
   display: inline-block;
   font-size: 20px;
-  color: #fff;
+  color: #002147;
 }
 
 h2{
@@ -217,18 +219,13 @@ h2{
 /* Track */
 ::-webkit-scrollbar-track {
  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
- -webkit-border-radius: 10px !important;
- border-radius: 10px !important;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
- -webkit-border-radius: 10px !important;
- border-radius: 10px !important;
- background: #41617D !important;
- -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5) !important;
+ background: #002147 !important;
 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
- background: #41617D !important;
+ background: #002147 !important;
 }
