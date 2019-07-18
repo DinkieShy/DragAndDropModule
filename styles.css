@@ -1,13 +1,13 @@
 .dropArea{
-    position: relative;
-    text-align: center;
-    width: 30%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: #002147;
-    background-color: white;
+  position: relative;
+  text-align: center;
+  width: 30%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #002147;
+  background-color: white;
 }
 
 .dropAreaHover{
@@ -117,7 +117,6 @@
 }
 
 .dragItem{
-  width: auto;
   padding: 0.6em 1em;
   font-size: 14px;
   box-sizing: border-box;
@@ -127,7 +126,7 @@
   text-align: center;
   vertical-align: middle;
   margin: 10px;
-  overflow: wrap;
+  white-space: nowrap;
   z-index: 5;
 }
 
@@ -155,10 +154,10 @@ h1{
 }
 
 h2{
-  color: #fff;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  color: #002147;
 }
 
 #tryAgainScreen{
@@ -175,12 +174,12 @@ h2{
 }
 
 #endScreen{
-  position: absolute;
-  padding: 10px;
-  height: 90%;
-  width: 90%;
-  top:5%;
-  left: 5%;
+  position: relative;
+  padding: 20px;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 100vw;
   background-color: white;
   z-index: 10;
   text-align: center;
@@ -192,13 +191,24 @@ h2{
 }
 
 #endScreen a{
+  position: relative;
   font-size: 10px;
-  background-color: gold;
-  color: black;
+  background-color: #002147;
+  color: white;
 }
 
 #closeButton{
-  margin-top: 90%;
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  bottom: 20px;
+}
+
+#endMessage{
+  color: white;
+  background-color: #047E8B;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .noselect {

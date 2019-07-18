@@ -12,6 +12,7 @@ var correctDropAreas = [correctDropArea1, correctDropArea2, correctDropArea3];
 $(document).ready(function(){
   $('.dropArea').droppable({
     drop: function(event, ui){
+      tolerance: "pointer",
       ui.draggable.css({
         top:'50%',
         left:'50%',
@@ -94,7 +95,7 @@ function checkAnswers(){
     }
   }
   if(correct && unusedItems.length == 0){
-    $('#endScreen').removeClass('hidden');
+    showEndScreen();
   }
   else if(unusedItems.length == 0){
     $('#tryAgainScreen').removeClass('hidden');
@@ -102,6 +103,10 @@ function checkAnswers(){
       setTimeout(hideTryAgainScreen, 3000);
     });
   }
+}
+
+function showEndScreen(){
+  $('#endScreen').animate({ left: 0 }, 1000);
 }
 
 function hideTryAgainScreen(){
