@@ -1,13 +1,36 @@
 .dropArea{
   position: relative;
   text-align: center;
-  width: 30%;
+  height: 100%;
+  width: calc(100% - 50px);
   overflow-y: scroll;
   overflow-x: hidden;
-  border-radius: 5px;
-  border-style: solid;
-  border-color: #002147;
   background-color: white;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.title{
+  background-color: #002147;
+  color: white;
+  width: 50px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-orientation: ;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.areaHolder{
+  height: calc(95% / 3);
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .dropAreaHover{
@@ -26,15 +49,15 @@
 
 #topSection{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   position: absolute;
   overflow: hidden;
   width: 100%;
   height: 70%;
   background: #747678;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
