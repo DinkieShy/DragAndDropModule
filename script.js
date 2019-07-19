@@ -42,7 +42,7 @@ function quit(){
 function closePage(){
   $('#endScreen').addClass('hidden');
   if(inIframe){
-    window.top.location = "http://localhost:8080/link/CompleteDragAndDrop/";
+    window.top.location = "https://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/";
   }
 }
 
