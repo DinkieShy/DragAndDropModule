@@ -48,13 +48,14 @@ function closePage(){
   // else{
   //   window.location.href = url;
   // }
-  if(inIframe()){
-    var url = "intent://scan/#Intent;scheme=COUNTDOWNTOLINCOLN;package=countdowntolincoln100-sandbox.mxapps.io;end";
-    window.top.location.href = url;
-  }
-  else{
-    window.location = "COUNTDOWNTOLINCOLN://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/";
-  }
+  //window.location.href = "https://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/";
+  // if(inIframe()){
+  //   var url = "intent://scan/#Intent;scheme=COUNTDOWNTOLINCOLN;package=countdowntolincoln100-sandbox.mxapps.io;end";
+  //   window.top.location.href = url;
+  // }
+  // else{
+  //   window.location = "COUNTDOWNTOLINCOLN://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/";
+  // }
   //var browserIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("COUNTDOWNTOLINCOLN://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/"));
   //startActivity(browserIntent);
 }
