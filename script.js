@@ -40,7 +40,8 @@ function quit(){
 }
 
 function closePage(){
-  top.location.replace("COUNTDOWNTOLINCOLN://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/");
+  Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("COUNTDOWNTOLINCOLN://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/"));
+  startActivity(browserIntent);
 }
 
 function inIframe(){
