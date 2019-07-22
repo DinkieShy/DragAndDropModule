@@ -40,8 +40,10 @@ function quit(){
 }
 
 function closePage(){
-  var browserIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("COUNTDOWNTOLINCOLN://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/"));
-  startActivity(browserIntent);
+  var url = "COUNTDOWNTOLINCOLN://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/";
+  window.top.location.href = url;
+  //var browserIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("COUNTDOWNTOLINCOLN://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/"));
+  //startActivity(browserIntent);
 }
 
 function inIframe(){
