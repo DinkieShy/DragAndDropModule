@@ -49,7 +49,7 @@ function closePage(){
   //   window.location.href = url;
   // }
   if(inIframe()){
-    window.top.location = "COUNTDOWNTOLINCOLN://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/";
+    window.open("https://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/");
   }
   else{
     window.location = "COUNTDOWNTOLINCOLN://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/";
