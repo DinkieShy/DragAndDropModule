@@ -40,14 +40,15 @@ function quit(){
 }
 
 function closePage(){
-  $('#endScreen').animate({ left: window.innerWidth() }, 1500);
-  var url = "https://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/";
-  if(inIframe){
-    window.top.location.href = url;
-  }
-  else{
-    window.location.href = url;
-  }
+  // $('#endScreen').animate({ left: window.innerWidth() }, 1500);
+  // var url = "https://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/";
+  // if(inIframe){
+  //   window.top.location.href = url;
+  // }
+  // else{
+  //   window.location.href = url;
+  // }
+  window.top.location = "https://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/";
   //var browserIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("COUNTDOWNTOLINCOLN://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/"));
   //startActivity(browserIntent);
 }
