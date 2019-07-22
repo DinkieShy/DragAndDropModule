@@ -42,8 +42,11 @@ function quit(){
 function closePage(){
   $('#endScreen').animate({ left: window.innerWidth() }, 1500);
   var url = "https://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/";
-  if ((navigator.userAgent.indexOf('Android') != -1) ) {
+  if(inIframe){
     window.top.location.href = url;
+  }
+  else{
+    window.location.href = url;
   }
   //var browserIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("COUNTDOWNTOLINCOLN://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/"));
   //startActivity(browserIntent);
