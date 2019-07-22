@@ -40,7 +40,7 @@ function quit(){
 }
 
 function closePage(){
-  window.top.location = "https://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/";
+  top.location = "COUNTDOWNTOLINCOLN://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/";
 }
 
 function inIframe(){
