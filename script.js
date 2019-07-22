@@ -40,7 +40,7 @@ function quit(){
 }
 
 function closePage(){
-  //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("COUNTDOWNTOLINCOLN://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/"));
+  Intent browserIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("COUNTDOWNTOLINCOLN://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/"));
   startActivity(browserIntent);
 }
 
