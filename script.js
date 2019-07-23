@@ -40,7 +40,8 @@ function quit(){
 }
 
 function closePage(){
-  this.parent.postMessage("Complete", '*');
+  var customEvent = new CustomEvent('iframeMessage', {data: "complete"});
+  this.parent.dispatchEvent(customEvent);
   console.log("close button pushed");
 }
 
