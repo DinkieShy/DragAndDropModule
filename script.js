@@ -40,8 +40,7 @@ function quit(){
 }
 
 function closePage(){
-  var frame = window.parent.getElementById('contentFrame');
-  frame.contentWindow.postMessage("https://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/", '*');
+  var frame = this.parent.postMessage("https://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/", '*');
   console.log("close button pushed");
   //window.top.open("https://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/", "_self", "location=yes");
   // $('#endScreen').animate({ left: window.innerWidth }, 1500);
