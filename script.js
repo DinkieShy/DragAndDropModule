@@ -40,28 +40,27 @@ function quit(){
 }
 
 function closePage(){
-  var frame = this.parent.postMessage("https://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/", '*');
+  var frame = this.parent.postMessage("Complete", '*');
   console.log("close button pushed");
-  //window.top.open("https://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/", "_self", "location=yes");
-  // $('#endScreen').animate({ left: window.innerWidth }, 1500);
-  // var url = "https://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/";
-  // if(inIframe){
-  //   window.top.location.href = url;
-  // }
-  // else{
-  //   window.location.href = url;
-  // }
-  //window.location.href = "https://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/";
-  // if(inIframe()){
-  //   var url = "intent://scan/#Intent;scheme=COUNTDOWNTOLINCOLN;package=countdowntolincoln100-sandbox.mxapps.io;end";
-  //   window.top.location.href = url;
-  // }
-  // else{
-  //   window.location = "COUNTDOWNTOLINCOLN://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/";
-  // }
-  //var browserIntent = new Intent(Intent.ACTION_SENDTO, Uri.parse("COUNTDOWNTOLINCOLN://countdowntolincoln100-sandbox.mxapps.io/link/CompleteDragAndDrop/"));
-  //startActivity(browserIntent);
 }
+
+// var microflowName = ""
+// mx.data.create({
+//     entity: "MyFirstModule.iframePoints",
+//     callback: function (object) {
+//         alert(object + ':' + event.data);
+//         object.set('points', event.data);
+//         object.save();
+//         mx.data.commit(object);
+//         mx.processor.xasAction({
+//             error: function () {
+//                 logger.error(this.id + "error: error while executing search");
+//             },
+//             actionname: microflowName,
+//             guids: [object.getGUID()]
+//         });
+//     }
+// });
 
 function inIframe(){
   try{
