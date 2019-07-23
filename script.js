@@ -40,7 +40,7 @@ function quit(){
 }
 
 function closePage(){
-  var frame = this.parent.postMessage("Complete", '*');
+  this.parent.postMessage("Complete", '*');
   console.log("close button pushed");
 }
 
